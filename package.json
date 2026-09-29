@@ -1,0 +1,55 @@
+{
+  "name": "pi-scoped-tests",
+  "version": "0.1.0",
+  "description": "Run only the pytest tests your change touches, and return only what matters — a pi extension.",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pytest",
+    "testing",
+    "extension"
+  ],
+  "license": "MIT",
+  "author": "rafmacalaba",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafmacalaba/pi-scoped-tests.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rafmacalaba/pi-scoped-tests/issues"
+  },
+  "homepage": "https://github.com/rafmacalaba/pi-scoped-tests#readme",
+  "type": "module",
+  "pi": {
+    "extensions": [
+      "./extensions/scoped-tests"
+    ]
+  },
+  "files": [
+    "extensions",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-agent-core": "*",
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*",
+    "typebox": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-agent-core": "^0.99.1",
+    "@earendil-works/pi-ai": "^0.99.1",
+    "@earendil-works/pi-coding-agent": "^0.99.1",
+    "@earendil-works/pi-tui": "^0.99.1",
+    "@types/node": "^22.0.0",
+    "typebox": "^1.3.34",
+    "typescript": "^5.7.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
